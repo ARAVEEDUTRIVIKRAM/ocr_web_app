@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .result-container {
+      display: inline-block;
+      text-align: left;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      margin: auto;
+    }
+    pre {
+      background: #e8e8e8;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>OCR Results</h1>
+  <div class="result-container">
+    <p><strong>Extracted Text:</strong></p>
+    <pre>{{ text }}</pre>
+    <a href="/">
+      <button>Perform Another OCR</button>
+    </a>
+  </div>
+</body>
+</html>

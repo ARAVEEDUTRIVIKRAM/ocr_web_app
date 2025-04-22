@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    input, select, button {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      padding: 8px;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>OCR Tool with Image Preprocessing</h1>
+  <form action="/process" method="post" enctype="multipart/form-data">
+    <label for="image">Upload an Image:</label>
+    <input type="file" name="image" accept="image/*" required>
+
+    <label for="language">Select Language:</label>
+    <select name="language" required>
+      <option value="eng">English</option>
+      <option value="hin">Hindi</option>
+      <option value="tam">Tamil</option>
+      <option value="tel">Telugu</option>
+      <option value="kan">Kannada</option>
+      <option value="mal">Malayalam</option>
+    </select>
+
+    <label for="preprocessing_mode">Preprocessing Mode:</label>
+    <select name="preprocessing_mode">
+      <option value="auto">Auto (Otsu Thresholding)</option>
+      <option value="simple">Simple Thresholding</option>
+      <option value="adaptive">Adaptive Thresholding</option>
+    </select>
+
+    <button type="submit">Perform OCR</button>
+  </form>
+</body>
+</html>

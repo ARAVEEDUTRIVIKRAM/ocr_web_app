@@ -1,0 +1,11 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333; /* Dark gray heading color */
+}
+
+/* Add more CSS rules as needed to style the form, labels, buttons, etc. */

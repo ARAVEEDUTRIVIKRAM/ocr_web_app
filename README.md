@@ -23,7 +23,11 @@ Flask
 
 Tesseract OCR
 
-HTML/CSS
+HTML
+
+CSS
+
+JavaScript
 
 OpenCV (for image preprocessing)
 

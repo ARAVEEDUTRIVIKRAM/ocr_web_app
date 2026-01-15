@@ -23,7 +23,6 @@ Flask
 
 Tesseract OCR
 
-HTML
 
 CSS
 

@@ -31,3 +31,5 @@ JavaScript
 OpenCV (for image preprocessing)
 
 Google Colab (for development and testing)
+
+HTML
